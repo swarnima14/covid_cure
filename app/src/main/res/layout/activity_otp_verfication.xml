@@ -15,130 +15,67 @@
         >
 
 
-        <EditText
-            android:id="@+id/et_1"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="28dp"
-            android:background="@color/grey_back"
-            android:ems="10"
-            android:gravity="center"
-            android:inputType="phone"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/et_2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-        <EditText
-            android:id="@+id/et_2"
-            android:layout_width="40dp"
-
-            android:layout_height="40dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="28dp"
-
-            android:background="@color/grey_back"
-            android:ems="10"
-            android:gravity="center"
-            android:inputType="phone"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/et_3"
-            app:layout_constraintStart_toEndOf="@+id/et_1"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-        <EditText
-            android:id="@+id/et_3"
-            android:layout_width="40dp"
-
-            android:layout_height="40dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="30dp"
-
-            android:background="@color/grey_back"
-            android:ems="10"
-            android:gravity="center"
-            android:inputType="phone"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/et_4"
-            app:layout_constraintStart_toEndOf="@+id/et_2"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-        <EditText
-            android:id="@+id/et_4"
-
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="30dp"
-
-            android:background="@color/grey_back"
-            android:ems="10"
-            android:gravity="center"
-            android:inputType="phone"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/et_5"
-            app:layout_constraintStart_toEndOf="@+id/et_3"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-        <EditText
-            android:id="@+id/et_5"
-
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="30dp"
-
-            android:background="@color/grey_back"
-            android:ems="10"
-            android:gravity="center"
-            android:inputType="phone"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/et_6"
-            app:layout_constraintStart_toEndOf="@+id/et_4"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-        <EditText
-            android:id="@+id/et_6"
-
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="40dp"
-
-            android:background="@color/grey_back"
-            android:ems="10"
-            android:gravity="center"
-            android:inputType="phone"
-            android:textSize="20sp"
-            android:textStyle="bold"
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+           app:srcCompat="@drawable/dots"
+            app:layout_constraintDimensionRatio="100:84"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/et_5"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animOtp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivImage"
+            app:layout_constraintDimensionRatio="16:9"
+            app:layout_constraintEnd_toEndOf="@+id/ivImage"
+            app:layout_constraintStart_toStartOf="@+id/ivImage"
+            app:layout_constraintTop_toTopOf="@+id/ivImage"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="otp.json"
+            app:lottie_loop="true" />
+
+        <!--<com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animOtp"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:lottie_fileName="otp.json"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            android:elevation="20dp"/>-->
+
+                <TextView
             android:id="@+id/textView10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
             android:layout_marginStart="50dp"
-            android:layout_marginTop="116dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="50dp"
             android:fontFamily="@font/psb"
             android:paddingLeft="45dp"
             android:text="ENTER OTP"
             android:textColor="#2F5AA8"
-            android:textSize="30sp"
+            android:textSize="28sp"
+            app:layout_constraintTop_toBottomOf="@id/ivImage"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/textView4"
@@ -156,18 +93,61 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
-        <Button
-            android:id="@+id/buttonSignIn"
-            android:layout_width="wrap_content"
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardViewNew"
+            app:layout_constraintTop_toBottomOf="@id/textView4"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/admin_button"
-            android:text="Sign In"
-            android:textColor="#fff"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="80dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="3dp"
+            app:cardBackgroundColor="@android:color/transparent"
+
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.486"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/et_3" />
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.alimuzaffar.lib.pin.PinEntryEditText
+                    android:id="@+id/etCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginEnd="48dp"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:textSize="20sp"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    app:layout_constraintBottom_toTopOf="@id/btnVerify"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:pinAnimationType="popIn" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnVerify"
+                    style="@style/ButtonOutlined"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:maxLength="6"
+                    android:text="Verify"
+                    android:textColor="#00574B"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="270:50"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/etCode" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
 
         <ProgressBar
             android:id="@+id/progressBar2"
@@ -178,7 +158,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonSignIn" />
+            app:layout_constraintTop_toBottomOf="@+id/cardViewNew" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
