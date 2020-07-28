@@ -21,7 +21,7 @@ import java.util.Objects;
 
 public class PhoneActivity extends AppCompatActivity {
     private Spinner spinner;
-    private TextInputEditText editText;
+    private EditText editText;
 
     SharedPreferences preferences;
     SharedPreferences.Editor editor;
