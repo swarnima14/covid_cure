@@ -11,6 +11,7 @@ import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserInfo;
@@ -20,7 +21,7 @@ import java.util.Objects;
 
 public class PhoneActivity extends AppCompatActivity {
     private Spinner spinner;
-    private EditText editText;
+    private TextInputEditText editText;
 
     SharedPreferences preferences;
     SharedPreferences.Editor editor;
