@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -27,6 +27,20 @@
     <style name="AppTheme.Dialog">
 
         <item name="colorAccent">#1565C0</item>
+    </style>
+
+    <style name="ButtonOutlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="cornerRadius">24dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="strokeColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="ButtonFilled" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="cornerRadius">24dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="backgroundColor">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
 </resources>
